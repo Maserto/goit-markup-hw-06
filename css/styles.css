@@ -888,7 +888,7 @@ color: #FFFFFF;
 }
 
 .input-subscription {
-  width: 358px;
+color: var(--white-text-color);
   height: 50px;
   padding: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -896,7 +896,8 @@ color: #FFFFFF;
   border-radius: 4px;
   background: transparent;
   outline: none;
-  color: var(--brand-text-color);
+  
+  color: var(--white-text-color);
 }
 
 .input-subscription::placeholder {
@@ -990,8 +991,23 @@ display: flex;
 .modal-button-icon {
   fill: 
   rgba(0, 0, 0, 1);
+  transition: fill 250ms
+  cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.modal-closebutton:hover .modal-button-icon {
+
+fill: var(--accent-color);
 
 }
+
+
+.modal-closebutton:focus .modal-button-icon {
+
+  fill: var(--accent-color);
+  
+  }
 .form-push-text {
   
 font-weight:700;
@@ -1011,7 +1027,7 @@ margin-bottom: 12px;
 .form-item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   padding: 0;
   text-align: left;
 }
@@ -1076,7 +1092,7 @@ margin-bottom: 4px;
 
 
 input  {
-  min-width: 448px;
+  min-width: 358px;
 height: 40px;}
 
 textarea {width: 100%;
@@ -1112,7 +1128,7 @@ textarea {width: 100%;
 .checkbox-container{
 
   margin-top: 20px;
-  justify-content: center;
+  /* justify-content: center; */
 
 }
 .checkbox-container input[type="checkbox"] {
@@ -1136,7 +1152,8 @@ textarea {width: 100%;
   
   .text-checkbox{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
+    justify-content: center;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -1177,6 +1194,7 @@ textarea {width: 100%;
 
   .link-terms {
     color: rgba(33, 150, 243, 1);
+    text-align: right;
   }
 .button-container
 {
