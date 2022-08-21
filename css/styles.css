@@ -996,18 +996,15 @@ display: flex;
 }
 
 
-.modal-closebutton:hover .modal-button-icon {
+.modal-closebutton:hover .modal-button-icon ,
+.modal-closebutton:focus .modal-button-icon  {
 
 fill: var(--accent-color);
 
 }
 
 
-.modal-closebutton:focus .modal-button-icon {
 
-  fill: var(--accent-color);
-  
-  }
 .form-push-text {
   
 font-weight:700;
@@ -1152,7 +1149,7 @@ textarea {width: 100%;
   
   .text-checkbox{
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
     font-size: 14px;
     line-height: 1.7;
